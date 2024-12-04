@@ -6,7 +6,7 @@ import { AnimationMixer } from "three";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile, scrollY }) => {
-  const { scene, animations } = useGLTF("./desktop_pc/scene.gltf");
+  const { scene, animations } = useGLTF("./Public/desktop_pc/scene.gltf");
   const [mixer] = useState(() => new AnimationMixer(scene));
 
   useEffect(() => {
